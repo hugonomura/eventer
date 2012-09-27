@@ -1,5 +1,13 @@
 <%= form_for @event do |f| -%>
-  <%= f.text_field :title %>
-  <%= f.text_area :description %>
+  <p>
+  	<%= f.label :title, "Titulo" %>
+  	<%= f.text_field :title %>
+  </p>
+  <p>
+  	<%= f.label :description, "Descrição" %>
+  	<%= f.text_area :description %>
+  </p>
+  <p>
   <%= f.submit %>
+  </p>
 <% end %>
