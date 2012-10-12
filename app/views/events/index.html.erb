@@ -4,6 +4,8 @@
 		<li>
 			<%= link_to event_path(event.id) do %>
 				<%= event.title %>
+				<%= link_to 'Editar', edit_event_path(event) %>
+				<%= link_to 'Apagar evento', event, confirm: 'Apagar esse evento?', method: :delete %>
 			<% end %>
 		</li>
 	<% end %>
